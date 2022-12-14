@@ -1,0 +1,20 @@
+{
+  "name": "My First Chrome Extension",
+  "version": "1.0.0",
+  "manifest_version": 3,
+  "description": "This Extension provides live scoreboard, standings, schedules and fixtures of NBA, NHL, MLB, NFL.",
+  "permissions": [
+    "alamrs",
+    "notifications"
+  ],
+  "background": {
+    "scripts": "background.js"
+  },
+  "content_scripts": {
+    "js": "content.js"
+  },
+  "action": {
+    "default_title": "Chromex",
+    "default_popup": "popup.html"
+  }
+}
